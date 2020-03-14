@@ -1,4 +1,4 @@
-# Have I Been Pwned password check (Django password validator)
+# Django password validator via Have I Been Pwned
 This is a custom Django password validator that can be integrated within your Django app to prevent users from using Pwned passwords. 
 
 ## Why?
