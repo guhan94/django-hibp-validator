@@ -16,8 +16,12 @@ This is a custom Django password validator that can be integrated within your Dj
 ## Is this safe?
 
 Recently (05 MARCH 2020), Have I Been Pwned increased its anonymity for checking Pwned passwords on top of their K-anonymity model.
-The new anonymity implementation helps consumers of the service to hit the API without worrying about possible inference of queries to hashes via Man-in-the-middle attack or encrypted traffic observation.
+
+The new anonymity implementation helps consumers of the service to hit the API without worrying about possible inference of 
+queries to hashes via Man-in-the-middle attack or encrypted traffic observation.
+
 This is achieved by padding of response data returned from HIBP as now the response would always consist random number of records between 800 and 1,000.
+
 Thus, API calls to validate pwned passwords is pretty safe and attackers sniffing traffic cannot reasonably determine which hash prefix was searched for by observing the response size.
 
 
